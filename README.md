@@ -11,3 +11,8 @@ inside of counting_particles, there are available two python scripts:
 
 inside of dataset_partition, there is available one python script:
 - **creating_directories.ipynb**: slipts date into three dataset (train, validation, test)
+
+inside of electrons_vs_noise, we can find three files:
+-**eVSn.npz**: contains the electron energy and the noise stored separately
+-**preparing_data_eVSn.ipynb**: notebook that prepares the npz file mentioned from the cropped images
+-**electron_vs_noise.ipynb**: notebook where the convolutional neural network is built in order to classify as electron or noise

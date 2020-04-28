@@ -30,8 +30,8 @@ inside of electrons_vs_muons, we can find eight files:
 inside of electrons_vs_muons_vs_noise, we can find four files:
 - **data_eVSmuVSn.ipynb**: contains the electron/muon energy and the noise stored separately, and also the noise
 - **add_noise_balacing.ipynb**: adds noise to the energy signals and balances the dataset so the three classes (electron, muon and noise) have the same number of samples
--**e_VS_mu_VS_n.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise
--**e_VS_mu_VS_n_noisy.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise, but in this case, the energy image includes also noise
--**eVSmuVSn_1.npz**: npz file with the data of electrons, muons and noise
--**eVSmuVSn_te1.npz** and **eVSmuVSn_tr1.npz**: both contain energy and the noise stored separately of muons and electrons, but the first filee constitutes the test data and the second one, the training data. The training dataset has been over/undersampled. We have three classes: electron, muon and noise.
--**eVSmuVSn_noisyte1.npz** and **eVSmuVSn_noisytr1.npz**: same as the files before but the energy images are noisy
+- **e_VS_mu_VS_n.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise
+- **e_VS_mu_VS_n_noisy.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise, but in this case, the energy image includes also noise
+- **eVSmuVSn_1.npz**: npz file with the data of electrons, muons and noise
+- **eVSmuVSn_te1.npz** and **eVSmuVSn_tr1.npz**: both contain energy and the noise stored separately of muons and electrons, but the first filee constitutes the test data and the second one, the training data. The training dataset has been over/undersampled. We have three classes: electron, muon and noise.
+- **eVSmuVSn_noisyte1.npz** and **eVSmuVSn_noisytr1.npz**: same as the files before but the energy images are noisy

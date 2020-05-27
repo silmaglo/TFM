@@ -7,7 +7,6 @@ inside of counting_particles, there are available two python scripts:
 
 inside of preprocessing, there are available two python scripts:
 - **crop_images.ipynb**: crops all energy and noise images and moves them to a new directory.
-- **dividing_particles.ipynb**: creates a directory for each type of particle and fills them with the data corresponding to each type of particle
 
 inside of dataset_partition, there is available one python script:
 - **creating_directories.ipynb**: slipts date into three dataset (train, validation, test)

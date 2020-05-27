@@ -43,3 +43,21 @@ inside of electrons_vs_muons_vs_noise, we can find four files:
 - **e_VS_mu_VS_n2N.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise but this time with noise added to the particles energy.
 - **standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
 - **standardizing_data(npz)N.ipynb**: standardizes the data before feeding it to the models but this time with noise added to the particles energy.
+
+
+inside of electrons_vs_muons_vs_alphas_vs_noise, we can find four files:
+- **crop_particles.ipynb**: crops the tracks of all the particles and determines the maximum window
+- **models**: models created with the data stored in the more_data folder.
+- **modelsN**: models created with the data stored in the more_data folder, but this time with noise added to the particles energy.
+- **cropped_tracks**: folder with some plots of the particles (original pictures, tracks and cropped images).
+- **add_noise.ipynb**: adds noise to the energy signals of electrons and muons.
+- **new_muons.ipynb**: crops new muons added to the folder where old muons were stored.
+- **data_generator.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model.
+- **data_generator_noisy.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model in the case where the electrons and muons have noise in their energy signals.
+- **data_eVSmuVSa.ipynb**: pads/crops the energy/noise files of electrons, alphas and muons to the size of the maximum window.
+- **preparing_noise_class.ipynb**: creates a new class, the noise class, from the noise stored in the electron files.
+- **e_VS_mu_VS_a_VS_n3.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon, alpha or noise
+- **e_VS_mu_VS_a_VS_n3N.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon, alpha or noise but this time with noise added to the particles energy.
+- **standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
+- **standardizing_data(npz)N.ipynb**: standardizes the data before feeding it to the models but this time with noise added to the particles energy.
+

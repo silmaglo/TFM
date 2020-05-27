@@ -20,17 +20,26 @@ inside of electrons_vs_noise, we can find six files:
 - **e_noisy_vs_noise.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or noise, but in this case, the image of the electron includes also noise
 
 inside of electrons_vs_muons, we can find eight files:
-- **eVSmu_tr1.npz** and **eVSmu_te1.npz**: both contain energy and the noise stored separately of muons and electrons, but the first filee constitutes the training dataset and the second one, the test data. The training dataset has been over/undersampled.
-- **eVSmu_te2.npz**, **eVSmu_tr2.npz** and **eVSmu_va2.npz**: both contain energy and noise stored separetely of muons and electrons. The first one has the testing data, the second one the training and the last one, the validation data. The training dataset has been over/undersampled.
+- **less_data**: folder contaning first round of data. There are two files, one with the training and validation data and the other one left, containig the testing data. The training dataset has been over/undersampled.
+- **more_data**: folder contaning first round of data. There are three files, one with the traning, another with validation data and the last one, containig the testing data. The training dataset has been over/undersampled. The training dataset has been over/undersampled.
+- **models**: models created with the data stored in the more_data folder.
 - **balancing_data.ipynb**: this notebook contains the code to balance our dataset and shows how we got the npz files mentioned.
-- **data_eVSmu.ipynb**: selects the data of muons and electrons in specific directories.
-- **e_VS_mu.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or muon
+- **add_noise_balacing.ipynb**: this notebooks adds noise to the energy of the particles and balances the dataset.
+- **data_eVSmu2.ipynb**: pads/crops the energy/noise files of electrons and muons with the data stored in the more_data folder.
+- **data_generator.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model.
+- **e_VS_mu.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or muon with the date inside less_data
+- **e_VS_mu.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or muon with the date inside more_data
+-**standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
 
 inside of electrons_vs_muons_vs_noise, we can find four files:
-- **data_eVSmuVSn.ipynb**: contains the electron/muon energy and the noise stored separately, and also the noise
-- **add_noise_balacing.ipynb**: adds noise to the energy signals and balances the dataset so the three classes (electron, muon and noise) have the same number of samples
-- **e_VS_mu_VS_n.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise
-- **e_VS_mu_VS_n_noisy.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise, but in this case, the energy image includes also noise
-- **eVSmuVSn_1.npz**: npz file with the data of electrons, muons and noise
-- **eVSmuVSn_te1.npz** and **eVSmuVSn_tr1.npz**: both contain energy and the noise stored separately of muons and electrons, but the first filee constitutes the test data and the second one, the training data. The training dataset has been over/undersampled. We have three classes: electron, muon and noise.
-- **eVSmuVSn_noisyte1.npz** and **eVSmuVSn_noisytr1.npz**: same as the files before but the energy images are noisy
+- **models**: models created with the data stored in the more_data folder.
+- **modelsN**: models created with the data stored in the more_data folder, but this time with noise added to the particles energy.
+- **add_noise.ipynb**: adds noise to the energy signals of electrons and muons.
+- **data_generator.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model.
+- **data_generator_noisy.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model in the case where the electrons and muons have noise in their energy signals.
+- **data_eVSmuVSn.ipynb**: pads/crops the energy/noise files of electrons and muons with the data stored in the more_data folder.
+- **preparing_noise.ipynb**: creates a new class, the noise class, from the noise stored in the electron files.
+- **e_VS_mu_VS_n2.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise
+- **e_VS_mu_VS_n2N.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise but this time with noise added to the particles energy.
+- **standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
+- **standardizing_data(npz)N.ipynb**: standardizes the data before feeding it to the models but this time with noise added to the particles energy.

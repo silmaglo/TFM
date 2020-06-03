@@ -61,3 +61,7 @@ inside of electrons_vs_muons_vs_alphas_vs_noise, we can find four files:
 - **standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
 - **standardizing_data(npz)N.ipynb**: standardizes the data before feeding it to the models but this time with noise added to the particles energy.
 
+inside of electrons_vs_alphas_vs_muons_location, we can find four files:
+- **adding_noise-LOC.ipynb**: first locates the track and add four parameters (x,y,w,h) to a new variable called 'loc'. Once the track is located, the noise is added to the energy image
+- **data_generator-LOC.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model in the case where the electrons, alphas and muons have noise in their energy signals.
+

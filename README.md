@@ -29,7 +29,7 @@ inside of electrons_vs_muons, we can find eight files:
 - **data_generator.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model.
 - **e_VS_mu.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or muon with the date inside less_data
 - **e_VS_mu.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or muon with the date inside more_data
--**standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
+-**standardizing_data(npz).ipynb**: INCORRECTLY standardizes the data before feeding it to the models
 
 inside of electrons_vs_muons_vs_noise, we can find four files:
 - **models**: models created with the data stored in the more_data folder.
@@ -41,8 +41,8 @@ inside of electrons_vs_muons_vs_noise, we can find four files:
 - **preparing_noise.ipynb**: creates a new class, the noise class, from the noise stored in the electron files.
 - **e_VS_mu_VS_n2.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise
 - **e_VS_mu_VS_n2N.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon or noise but this time with noise added to the particles energy.
-- **standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
-- **standardizing_data(npz)N.ipynb**: standardizes the data before feeding it to the models but this time with noise added to the particles energy.
+- **standardizing_data(npz).ipynb**: INCORRECTLY standardizes the data before feeding it to the models
+- **standardizing_data(npz)N.ipynb**: INCORRECTLY standardizes the data before feeding it to the models but this time with noise added to the particles energy.
 
 
 inside of electrons_vs_muons_vs_alphas_vs_noise, we can find four files:
@@ -58,11 +58,13 @@ inside of electrons_vs_muons_vs_alphas_vs_noise, we can find four files:
 - **preparing_noise_class.ipynb**: creates a new class, the noise class, from the noise stored in the electron files.
 - **e_VS_mu_VS_a_VS_n3.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon, alpha or noise
 - **e_VS_mu_VS_a_VS_n3N.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon, alpha or noise but this time with noise added to the particles energy.
-- **standardizing_data(npz).ipynb**: standardizes the data before feeding it to the models
-- **standardizing_data(npz)N.ipynb**: standardizes the data before feeding it to the models but this time with noise added to the particles energy.
+- **standardizing_data(npz).ipynb**: INCORRECTLY standardizes the data before feeding it to the models
+- **standardizing_data(npz)N.ipynb**: INCORRECTLY standardizes the data before feeding it to the models but this time with noise added to the particles energy.
 
 inside of electrons_vs_alphas_vs_muons_location, we can find four files:
 - **adding_noise-LOC.ipynb**: first locates the track and add four parameters (x,y,w,h) to a new variable called 'loc'. Once the track is located, the noise is added to the energy image
 - **data_generator-LOC.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model for locating and classifying electrons, alphas and muons.
 - **data_generator-noisy-LOC.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model to classify and locate the particles, but in the case the electrons, alphas and muons have noise in their energy signals.
-
+- **e_VS_mu_VS_a_Loc.ipynb**: notebook where convolutional neural networks are built in order to classify as electron, muon, or alpha particle and locate them into the image
+- **standardizing_data(npz).ipynb**: CORRECTLY standardizing the input data (energy images) and location parameters of the three data splits (train, test and validation)
+- **models**: folders containing the models created

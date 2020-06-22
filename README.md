@@ -5,7 +5,7 @@ inside of counting_particles, there are available two python scripts:
 - **num_particles.ipynb**: counts the number of each type of particle available (for now: electrons, gammas and alpha particles)
 - **plot_particles.ipynb**: plots of some example of particles. the plots show both energy and noise separately. 
 
-inside of preprocessing, there are available two python scripts:
+inside of preprocessing:
 - **crop_images.ipynb**: crops all energy and noise images and moves them to a new directory.
 
 inside of dataset_partition, there is available one python script:
@@ -19,7 +19,7 @@ inside of electrons_vs_noise, we can find six files:
 - **eVSn_noisy1.npz**: contains the electron energy+noise and the noise stored separately
 - **e_noisy_vs_noise.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or noise, but in this case, the image of the electron includes also noise
 
-inside of electrons_vs_muons, we can find eight files:
+inside of electrons_vs_muons:
 - **less_data**: folder contaning first round of data. There are two files, one with the training and validation data and the other one left, containig the testing data. The training dataset has been over/undersampled.
 - **more_data**: folder contaning first round of data. There are three files, one with the traning, another with validation data and the last one, containig the testing data. The training dataset has been over/undersampled. The training dataset has been over/undersampled.
 - **models**: models created with the data stored in the more_data folder.
@@ -31,7 +31,7 @@ inside of electrons_vs_muons, we can find eight files:
 - **e_VS_mu.ipynb**: notebook where convolutional neural networks are built in order to classify as electron or muon with the date inside more_data
 -**standardizing_data(npz).ipynb**: INCORRECTLY standardizes the data before feeding it to the models
 
-inside of electrons_vs_muons_vs_noise, we can find four files:
+inside of electrons_vs_muons_vs_noise:
 - **models**: models created with the data stored in the more_data folder.
 - **modelsN**: models created with the data stored in the more_data folder, but this time with noise added to the particles energy.
 - **add_noise.ipynb**: adds noise to the energy signals of electrons and muons.
@@ -45,7 +45,7 @@ inside of electrons_vs_muons_vs_noise, we can find four files:
 - **standardizing_data(npz)N.ipynb**: INCORRECTLY standardizes the data before feeding it to the models but this time with noise added to the particles energy.
 
 
-inside of electrons_vs_muons_vs_alphas_vs_noise, we can find four files:
+inside of electrons_vs_muons_vs_alphas_vs_noise:
 - **crop_particles.ipynb**: crops the tracks of all the particles and determines the maximum window
 - **models**: models created with the data stored in the more_data folder.
 - **modelsN**: models created with the data stored in the more_data folder, but this time with noise added to the particles energy.
@@ -61,7 +61,7 @@ inside of electrons_vs_muons_vs_alphas_vs_noise, we can find four files:
 - **standardizing_data(npz).ipynb**: INCORRECTLY standardizes the data before feeding it to the models
 - **standardizing_data(npz)N.ipynb**: INCORRECTLY standardizes the data before feeding it to the models but this time with noise added to the particles energy.
 
-inside of electrons_vs_alphas_vs_muons_location, we can find four files:
+inside of electrons_vs_alphas_vs_muons_location, we can find six files:
 - **adding_noise-LOC.ipynb**: first locates the track and add four parameters (x,y,w,h) to a new variable called 'loc'. Once the track is located, the noise is added to the energy image
 - **data_generator-LOC.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model for locating and classifying electrons, alphas and muons.
 - **data_generator-noisy-LOC.ipynb**: notebook to create the batches that will be used for the training, validation and testing of the model to classify and locate the particles, but in the case the electrons, alphas and muons have noise in their energy signals.
